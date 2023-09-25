@@ -1,1 +1,144 @@
+  
+.hero-section{
+    position: relative;
+    max-width: 100%;
+}
+.bg-img{
+    max-width: 100%;
+    height: auto;
+}
+.hero-text-section{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.hero-section h1,h2{
+    color:white;
+    font-size: 40px;
+     white-space: nowrap; 
+    /* line-height: .5; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 
+}
+.img-span{
+    font-size: 16px;
+}
+.black-box{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;    
+    
+}
+.black-box h3{
+    font-size: 80px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; 
+}
+.black-span{
+    font-size: 96px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style individual card items */
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  /* Style the cards */
+  .card {
+    max-width: 340px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(211, 14, 14, 0.2);
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  
+  /* Style card images */
+  .card img {
+    max-width: 100%; 
+    
+  }
+  
+  /* Style card content */
+  .card-content {
+    margin-top: 20px;
+  }
+  
+  /* Style card heading */
+  .card-content h3 {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+  
+  /* Style card paragraph */
+  .card-content p {
+    font-size: 16px;
+    padding: 0 15px;
+    text-align: justify;
+  }
+
+  .footer-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    gap: 20px;
+   
+  }
+  .footer-section-ele{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+  }
+  .box1{
+    background-color: green;
+  }
+  .box2{
+    background-color: brown;
+  }
+
+  @media only screen and (max-width : 786px)
+  {
+    .black-box h3{
+        font-size: 24px;
+    }
+    .black-span{
+        font-size: 30px;
+    }
+    .hero-section h1,h2{
+        text-align: center;
+    }
+    .hero-section{
+     min-height: 50vh;   
+    }
+    .footer-section{
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        max-width: 100%;
+        gap: 0;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    } 
+  }
+
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
