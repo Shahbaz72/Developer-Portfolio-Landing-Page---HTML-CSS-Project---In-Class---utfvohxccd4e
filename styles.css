@@ -11,13 +11,13 @@
     position: absolute;
     top: 15%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    font-size: 24px;
+    
+     transform: translate(-50%, -50%); 
 }
 .hero-section h1,h2{
     color:white;
-    font-size: 40px;
-     white-space: nowrap; 
-    /* line-height: .5; */
+    white-space: nowrap; 
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 
@@ -122,9 +122,9 @@
     .hero-section h1,h2{
         text-align: center;
     }
-    .hero-section{
+    /* .hero-section{
      min-height: 50vh;   
-    }
+    } */
     .footer-section{
         flex-direction: column;
         align-items: center; 
